@@ -1,4 +1,4 @@
-import 'dart:convert';
+
 
 import 'package:calculator_app/number_button.dart';
 import 'package:flutter/material.dart';
@@ -10,13 +10,15 @@ class DigitRowSet extends StatelessWidget {
     required this.third,
     required this.fourth,
     required this.onPress,
+
     super.key});
 
   final String first;
   final String second;
   final String third;
   final String fourth;
-   final Function onPress;
+  final Function onPress;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,20 +28,21 @@ class DigitRowSet extends StatelessWidget {
         children: [
           NumberButton(
               number: first,
-            onPress: onPress,
+            onPress:onPress,
           ),
           NumberButton(
             number: second,
-              onPress: onPress,
+            onPress: onPress,
           ),
           NumberButton(
               number: third,
-            onPress: onPress,
+            onPress:onPress,
           ),
           NumberButton(
               number: fourth,
             onPress: onPress,
-          ),
+
+          )
 
       ],
       ),
